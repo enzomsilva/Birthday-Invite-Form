@@ -12,17 +12,43 @@
     <title>Formulário de convite</title>
 </head>
 <body>
-    <div class="page">
+    <div id="app">
         <aside>
             <div class="aside">
-                <p>testing
-                    
-                </p>
+                <header>
+                    <img src="./src/assets/icons/Logo (1).svg" alt="A party hat">
+                    <h1>Festivite</h1>
+                    <p>Crie um convite digital para o seu evento</p>
+                </header>
             </div>
         </aside>
 
         <main>
+            <h2>
+                Crie seu convite
+            </h2>
 
+            <form action="">
+
+                <fieldset id="event-info">
+
+                    <div class="legend-wrapper">
+                    <img src="./src/assets/icons/calendar.svg" alt="Calendar icon">
+                    <legend>Sobre o evento</legend>
+                    </div>
+
+                    <div class="input-wrapper">
+                    <label for="event-name">Título</label>
+                    <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
+                    </div>
+
+                    <div class="input-wrapper">
+                    <label for="event-start">Início</label>
+                    <input type="datetime-local" name="event-start" id="event-start">
+                    </div>
+                    
+                </fieldset>
+            </form>
         </main>
     </div>
 </body>
