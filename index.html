@@ -16,7 +16,7 @@
         <aside>
             <div class="aside">
                 <header>
-                    <img src="./src/assets/icons/Logo (1).svg" alt="A party hat">
+                    <img src="../src/assets/icons/Logo (1).svg" alt="A party hat">
                     <h1>Festivite</h1>
                     <p>Crie um convite digital para o seu evento</p>
                 </header>
@@ -24,31 +24,73 @@
         </aside>
 
         <main>
-            <h2>
-                Crie seu convite
-            </h2>
+            <div class="main-page">
+                <h2>
+                    Crie seu convite
+                </h2>
+        
+                <form action="" enctype="multipart/form-data">
+        
+                    <fieldset id="event-info">
+        
+                        <div class="legend-wrapper">
+                            <img src="./src/assets/icons/calendar.svg" alt="Calendar icon">
+                            <legend>Sobre o evento</legend>
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="event-name">Título</label>
+                            <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
+                        </div>
 
-            <form action="">
+                        <div class="double-input">
+                        
+                            <div class="input-wrapper">
+                                <label for="event-start">Início</label>
+                                <input type="datetime-local" name="event-start" id="event-start">
+                            </div>
+                        
+                            <div class="input-wrapper">
+                                <label for="event-end">Fim</label>
+                                <input type="datetime-local" name="event-end" id="event-end">
+                            </div>
+                        
+                        </div>
 
-                <fieldset id="event-info">
+                        <div class="double-input">
+                        
+                            <div>
+                                <label>Tipo</label>
 
-                    <div class="legend-wrapper">
-                    <img src="./src/assets/icons/calendar.svg" alt="Calendar icon">
-                    <legend>Sobre o evento</legend>
-                    </div>
+                                <div class="input-wrapper">
+                                    <div class="radio-selection">
+                                    <label for="event-type-1">Presencial</label>
+                                    <input type="radio" name="event-type" id="event-type-1" value="presencial">
+                                    </div>
 
-                    <div class="input-wrapper">
-                    <label for="event-name">Título</label>
-                    <input type="text" name="event-name" id="event-name" placeholder="Nome do evento">
-                    </div>
-
-                    <div class="input-wrapper">
-                    <label for="event-start">Início</label>
-                    <input type="datetime-local" name="event-start" id="event-start">
-                    </div>
-                    
-                </fieldset>
-            </form>
+                                    <div class="radio-selection">
+                                    <label for="event-type-2">Online</label>
+                                    <input type="radio" name="event-type" id="event-type-2" value="online">
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="input-wrapper">
+                                <label for="event-local">Local</label>
+                                <input type="text" name="event-local" id="event-local" placeholder="Link ou endereço">
+                            </div>
+                        
+                        </div>
+        
+                        <div class="input-wrapper">
+                            <label for="event-description">Descrição</label>
+                            <textarea name="description" id="event-description"
+                                placeholder="Escreva sobre os detalhes do evento"></textarea>
+                        </div>
+        
+                    </fieldset>
+                </form>
+            </div>
         </main>
     </div>
 </body>

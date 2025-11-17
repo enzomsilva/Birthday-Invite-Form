@@ -1,0 +1,22 @@
+main {
+    background-color: var(--shape-body);
+    border-radius: .75rem;
+}
+
+.main-page {
+    width: 75%;
+    margin-inline: auto;
+    margin-block: 80px;
+
+    & h2 {
+        margin-bottom: 2.5rem;
+        font: var(--font-header-md);
+        color: var(--text-heading);
+    }
+
+    & fieldset {
+        border: none;
+        display: grid;
+        gap: 1rem;
+    }
+}

@@ -4,19 +4,16 @@ body {
     align-items: center;
     margin: auto;
     max-width: 1440px;
+    overflow: hidden;
 }
 
 #app {
-    overflow: auto;
     display: grid;
     grid-auto-flow: column;
-    grid-template-columns: 32.25%  66.12%;
+    /* grid-template-columns: 32.25%  66.12%; */
+    grid-template-columns: 1fr 2fr;
     padding: 1.25rem;            /*Maybe it will give you trouble, be carreful*/
     gap: 1.25rem;
     height: 100vh;
 }
 
-aside {
-    border: 1px solid green;
-    
-}
